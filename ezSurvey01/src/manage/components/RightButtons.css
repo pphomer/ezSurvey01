@@ -1,0 +1,19 @@
+﻿.RightSticky {
+    position: sticky;
+    top: 12vh;
+}
+
+    .RightSticky div {
+        margin-top: 0.5rem;
+        overflow-y: scroll;
+        height: 68vh;
+    }
+
+        .RightSticky div::-webkit-scrollbar {
+            width: 0px;
+            background: transparent; /* make scrollbar transparent */
+        }
+
+.btn.editing, .btn.editing:focus {
+    border-left: 0.6rem solid #ff6a00;
+}

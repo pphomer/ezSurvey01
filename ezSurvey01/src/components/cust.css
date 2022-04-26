@@ -1,0 +1,12 @@
+﻿.mce-content-body {
+    /*min-height: 120px;
+    border: solid 1px;*/
+    min-height: 120px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: 0.35rem 0.75rem;
+}
+
+.mce-content-body::before {
+    padding-left:0.75rem;
+}

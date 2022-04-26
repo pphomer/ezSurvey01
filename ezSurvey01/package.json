@@ -1,0 +1,46 @@
+{
+    "name": "ezsurvey01",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jest": "^26.0.22",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.3",
+        "css-loader": "^5.2.4",
+        "source-map-loader": "^2.0.1",
+        "style-loader": "^2.0.0",
+        "ts-loader": "^9.0.0",
+        "typescript": "4.6.2",
+        "webpack": "^5.33.2",
+        "webpack-cli": "^4.6.0"
+    },
+    "dependencies": {
+        "@fancyapps/ui": "^4.0.5",
+        "@reduxjs/toolkit": "^1.5.1",
+        "@tinymce/tinymce-react": "^3.12.2",
+        "@types/fancybox": "^3.5.3",
+        "@types/jquery": "^3.5.11",
+        "@types/react-redux": "^7.1.16",
+        "bootstrap-icons": "^1.5.0",
+        "html-react-parser": "^1.2.6",
+        "immutability-helper": "^3.1.1",
+        "react": "^17.0.2",
+        "react-datepicker": "^4.1.1",
+        "react-dnd": "^14.0.2",
+        "react-dnd-html5-backend": "^14.0.0",
+        "react-dom": "^17.0.2",
+        "react-fancybox": "^1.0.2",
+        "react-icons": "^4.2.0",
+        "react-redux": "^7.2.4",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "^5.0.0"
+    }
+}

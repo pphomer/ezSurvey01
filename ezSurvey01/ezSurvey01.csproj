@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <UserSecretsId>d24d5267-292a-444f-98e2-6174fc5b77d9</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\exam\ExamList.tsx" />
+    <None Remove="src\index.tsx" />
+    <None Remove="src\manage\components\QNRTable.tsx" />
+    <None Remove="src\manage\components\QuestList.tsx" />
+    <None Remove="src\manage\components\RightButtons.tsx" />
+    <None Remove="src\manage\index.tsx" />
+    <None Remove="src\manage\manageSlice.ts" />
+    <None Remove="src\manage\QNREdit.tsx" />
+    <None Remove="src\manage\qnrList.tsx" />
+    <None Remove="src\manage\QNRProps.tsx" />
+    <None Remove="src\manage\QNRQuests.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utility\Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\exam\ExamList.tsx" />
+    <TypeScriptCompile Include="src\index.tsx" />
+    <TypeScriptCompile Include="src\manage\components\QNRTable.tsx" />
+    <TypeScriptCompile Include="src\manage\components\QuestList.tsx" />
+    <TypeScriptCompile Include="src\manage\components\RightButtons.tsx" />
+    <TypeScriptCompile Include="src\manage\index.tsx" />
+    <TypeScriptCompile Include="src\manage\manageSlice.ts" />
+    <TypeScriptCompile Include="src\manage\QNREdit.tsx" />
+    <TypeScriptCompile Include="src\manage\QNRList.tsx" />
+    <TypeScriptCompile Include="src\manage\QNRProps.tsx" />
+    <TypeScriptCompile Include="src\manage\QNRQuests.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ValidationMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ValidationMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ValidationMessages.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="npm run build" />
+  </Target>
+
+</Project>

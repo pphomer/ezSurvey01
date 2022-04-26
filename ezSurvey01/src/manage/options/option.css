@@ -1,0 +1,31 @@
+﻿.questitem {
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+.questitem-index {
+    flex: 0 0 20px;
+    padding-right: 2px;
+    /*text-align: right;*/
+}
+
+.questitem-content {
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+.questitem-content input[type='text'] {    
+    height:2.5rem;
+}
+
+.questitem-content .quest-option{
+    width:calc(100% - 8rem);
+}
+
+.questitem-content .satis-quest,
+.questitem-content .satis-option {
+    width: calc(100% - 1rem);
+}
+ 

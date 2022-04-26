@@ -1,0 +1,24 @@
+﻿.inline {
+    display:inline
+}
+
+.ques_id{
+    float:left
+}
+
+.ques_content {
+    background-color: #eeedf0
+}
+
+div.row {
+    background-color: yellow;
+}
+
+.fileList div.row {
+    background-color: yellow;
+}
+
+.fileList div.row :hover{
+    background-color: yellow;
+}
+

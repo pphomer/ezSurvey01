@@ -1,0 +1,27 @@
+﻿.toolbar {
+    position: fixed;
+    top: 200px;
+    right: 200px;
+}
+
+select {
+    max-width: 200px;
+}
+
+.questview  dd.inline {
+    /*display: inline-block;*/
+    margin: 0;
+}
+
+.questview dt.inline {
+    float: left;
+    clear: left;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+    .questview dt:after {
+        content: ":";
+    }
+
+

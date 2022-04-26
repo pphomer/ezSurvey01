@@ -1,0 +1,140 @@
+﻿
+.quest-toolbar {
+    display:flex;
+    /*padding-top:1rem;*/
+    margin-bottom:1rem;
+    justify-content:space-between;
+    align-items:center;
+} 
+
+.quest-toolbar.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color:whitesmoke;
+}
+
+.innerVerDrag select {
+    width: 300px;
+    max-width: 300px;
+}
+
+.questview dd.inline {
+    /*display: inline-block;*/
+    margin: 0;
+}
+
+.questview dt.inline {
+    float: left;
+    clear: left;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.questview dt:after {
+    content: ":";
+}
+
+/*.questview.pagebreak {
+    border-bottom: thick double #32a1ce;
+}*/
+
+.questview {
+    position: relative;
+    padding-bottom : 1px;
+}
+
+.questview .icon {
+    color:darkblue;
+    position: absolute;    
+}
+
+.questview .createQuest {
+    right: -0.8rem;
+    bottom: -1.5rem;
+    visibility:hidden;
+}
+
+.questview .pageBreak {
+    right: 1.5rem;
+    bottom: -1.5rem;
+}
+
+.outerDrag .btn-toolbar,
+.outerDrag .createQuest {
+    visibility:hidden;
+}
+
+.outerDrag .btn-toolbar.active,
+.outerDrag:hover .btn-toolbar,
+.outerDrag:hover .createQuest {
+    visibility:visible;
+}
+
+.innerDrag:hover,
+.innerDrag:hover div {
+    background-color: whitesmoke;
+}
+
+textarea.noresize {
+    resize: none;
+}
+
+.form-group.row.required .col-form-label:after,
+label.required:after {
+    content: "*";
+    color: crimson;
+    font-size: 1rem;
+    height: 35px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 0.2rem;
+}
+
+.form-group.row.required .col-form-label.warning:after,
+label.required.warning:after {
+    color: red;
+    font-size: 1.7rem;
+}
+
+label.warning {
+    color: red;
+    font-weight: 900;
+    visibility: inherit;
+}
+
+label.satisContent.required {
+    width: 0.5rem;
+}
+
+label.satisContent.required:after {
+    content: "*";
+    color: crimson;
+    font-size: 0.8rem;
+    vertical-align: middle;
+    display:inline-block;
+    height:35px;/* 參考 input.text 的高, .warning.font-size變動時才不會parent 跟著變大變小*/ 
+}
+
+label.satisContent.required.warning:after {
+    color: red;
+    font-weight:900;    
+    font-size: 1.7rem;
+}
+
+label.satisContent.required.warning + input {
+    border-bottom:dashed red;
+}
+
+.questType {
+    width: auto;
+    margin-right:0.5rem;
+}
+
+.num-input{
+    width:80px !important;
+}
+
+.quest-radio-group > div:nth-child(2){
+    display:flex;
+}

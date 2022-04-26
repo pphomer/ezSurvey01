@@ -1,0 +1,93 @@
+﻿.hidden {
+    visibility: hidden
+}
+
+.outerDrag, .pseudoOuterDrag { /* 給 新增option-button用*/
+    padding: 0.5rem;
+    /*background-color: white;*/
+}
+
+#qnrForm .block{
+    margin:1rem 0.5rem 0.5rem 0.5rem;
+}
+
+#qnrForm .banner {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*height:10rem;*/
+    overflow:hidden;
+    position:relative;
+}
+
+#qnrForm .banner svg {
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:3rem;
+    width:3rem;
+    color:aliceblue;
+}
+
+#qnrForm .banner img {
+    width: 100%;
+    border-radius: 1rem;
+    height: 18vh;
+    object-fit: cover;
+}
+
+/*#qnrForm .block,
+.innerDrag {
+    border: 1px dashed gray;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+*/
+
+
+.innerHorDrag {
+    padding: 0rem 1rem 0.5rem 1rem;
+}
+
+.innerVerDrag {
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    display:flex;
+    align-items:center;
+}
+
+.handleIcon {
+    margin: auto;
+    color: grey;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.handleBar {
+    background-color: white;
+    cursor: move;
+}
+
+.handleBar.disabled {
+    cursor: unset;
+}
+
+.handleBar.disabled handleIcon {
+    visibility: hidden
+}
+
+.handleHorBar {
+    width: 100%;
+    height: 1.5rem;
+    display: block;
+}
+
+.handleVerBar {
+    width: 1.5rem;
+    /*background-color:cadetblue;*/
+    /*height: 100%;  遇到 flex 會縮小/shrink ?? */
+}
+
+.VerContainer {
+    display: table-cell;
+    width: 100%
+}

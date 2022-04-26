@@ -1,0 +1,62 @@
+﻿.inline {
+    display:inline
+}
+
+.ques_id{
+    float:left
+}
+
+.ques_content {
+    background-color: #eeedf0
+}
+
+.fileList div.row:hover{
+    background-color: lightskyblue;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.limit.warning {
+    color: red;
+}
+
+div.satis {
+  display:inline-block;
+}
+
+span.required, div.required {
+    border-bottom: solid 2px;
+    border-bottom-color: transparent;
+}
+
+span.required.warning, div.required.warning {
+   border-bottom-color:red; 
+}
+
+.satis {
+    display: inline-block;
+    width: calc(100% - 1rem)
+}
+
+.submit .btn {
+    width:13rem;
+}
+
+.upbar {
+    width: 100%;
+    display:flex;
+    justify-content:right;
+}
+
+.upup {
+    height:2rem;
+    width:2rem;
+    position:sticky;
+    bottom:0.5rem;
+    left:100vw;
+    margin-right:0.5rem;
+    border:solid #b6ff00; 
+    background-color:darkgreen;
+}
