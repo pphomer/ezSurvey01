@@ -1,0 +1,188 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+  overflow-y:scroll;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color:#334f38;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+/* 
+-------------------------------------------------- */
+.container-lg {
+    max-width:960px;
+}
+
+.container-lg.edit {
+    max-width: calc( 960px + 6.5rem );
+    /*padding-left:2rem;*/
+}
+
+section {
+    border-radius: 0.7rem;
+    margin-bottom:1rem;
+    padding:1.3rem 4rem 1.3rem 1.3rem;
+}
+
+section.banner_img {
+    padding: unset;
+}
+
+.banner_img img {
+    width: 100%;
+    border-radius: 0.7rem;
+    height: 28vh;
+    object-fit: cover;
+}
+
+.question .option {
+    display:flex;
+    height:2.5rem;
+}
+
+.form-check{
+    padding-left:unset;
+}
+
+.form-check .form-check-input {
+    margin-left: unset;
+}
+
+.form-check label {
+    padding-right: 0.3rem;
+    margin-left: 0rem;
+    padding-left: 0.3rem;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    width: 1.2rem;
+    height: 1.2rem;
+    box-shadow: none;
+}
+
+.react-datepicker__tab-loop{
+    display:inline-block;
+}
+
+
+.itest {
+    height: 200px;
+}
+
+#i1{
+    background-color:aquamarine;
+    padding-left:100px;
+    /*display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;*/
+}
+
+#i2 {
+    background-color:darkcyan;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 100px;
+    /*display:inline-block;*/
+   /* justify-self:center;
+    align-self:center;*/
+}
+
+#i3 {
+    background-color: darkkhaki;
+    width: 100px;
+    margin-left: 100%;
+    /*margin-right: auto;*/
+    /*display: inline-block;*/
+}
+
+.title input[type='text'] {
+    font-size:2.2rem;
+    height:3rem;
+}
+
+::placeholder {
+    color: yellow;
+    font-size: 1.2em;
+}
+
+::-webkit-input-placeholder { /* Chrome, Safari */
+    color: yellow;
+}
+
+.questcontent{
+    font-size:1.25rem;
+}
+
+/* ref .mce-content-body padding + border */
+.questview .questcontent {
+    padding: calc(1px + 0.35rem) calc(1px + 0.75rem)
+}
